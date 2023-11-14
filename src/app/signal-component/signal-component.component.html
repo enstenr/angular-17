@@ -1,3 +1,31 @@
 Variable Value is {{count()}}
+@if(isVisible==true) {
+<div   > This is visible </div>
+}
+<button mat-raised-button color="accent" (click)="buttonClicked()">Click Me </button>
 
-<button (click)="buttonClicked()">Click Me </button>
+
+@for (item of items; track item.name) {
+    <li> {{ item.name }} </li>
+  } @empty {
+    <li> There are no items. </li>
+  }
+
+
+
+
+  @switch (switchVar) {
+    @case ('A') {
+      Case A.
+    }
+    @case ('B') {
+      Case B.
+    }
+    @default {
+      Default case.
+    }
+  }
+
+
+  <button mat-raised-button color="primary">Primary</button>
+  <mat-progress-bar mode="indeterminate"></mat-progress-bar>

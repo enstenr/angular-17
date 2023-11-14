@@ -11,6 +11,6 @@ import { SignalComponentComponent } from './signal-component/signal-component.co
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-    
+   
   
 }
