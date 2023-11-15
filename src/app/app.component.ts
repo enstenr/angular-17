@@ -6,11 +6,11 @@ import { SignalComponentComponent } from './signal-component/signal-component.co
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet,SignalComponentComponent],
+  imports: [CommonModule, RouterOutlet, SignalComponentComponent],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-   
-  
+
+
 }
